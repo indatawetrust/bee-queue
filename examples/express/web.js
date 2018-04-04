@@ -4,7 +4,7 @@ var app = express();
 app.use(logger('dev'));
 
 var Queue = require('../../');
-var queue = Queue('express-example');
+var queue = new Queue('express-example');
 
 app.get('/run/:x/:y', function (req, res) {
   var job = queue.createJob({
