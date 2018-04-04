@@ -1,5 +1,5 @@
 var Queue = require('../../');
-var queue = Queue('express-example');
+var queue = new Queue('express-example');
 
 queue.on('ready', function () {
   queue.process(function (job, done) {
